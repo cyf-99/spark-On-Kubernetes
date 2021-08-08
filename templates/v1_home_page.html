@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+<!--            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>-->
+    <script type = "text/javascript" src="../static/echarts.min.js"></script>
+<!--    <script type = "text/javascript"-->
+<!--            src="{{url_for('static', filename='echarts.min.js')}}"></script>-->
+
+    
+</head>
+<body>
+    <style>.box {  }; </style>
+    <style>
+        .head{
+            font-size:20px;
+            margin-top: 0px;
+            margin-bottom: 1px;
+            height:60px;
+            text-align: left;
+            line-height:55px;
+            background: #F5F5F5;
+        }
+        a:link{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #359ACC;
+            text-decoration: none;
+        }
+        a:active{
+            color: #D95450;
+            text-decoration: none;
+        }
+    </style>
+    <div class="head" style="width: 100%;">
+            <span class="head" style="width: 20%; text-align: center; float: left">
+                <a href="http://192.168.10.4:30001/">首页</a>
+            </span>
+            <span  class="head" style="width: 20%; text-align: center; float: left">
+                <a href="http://192.168.10.4:30001//yesterday_summary">昨日用户统计数据</a>
+            </span>
+            <span class="head" style="width: 20%; text-align: center; float: left">
+                <a href="query.html">查询</a>
+            </span>
+    </div>
+    <div class="box">
+                <div id="eeb476b459004982b3c86b5c33cd4f31" class="chart-container" style="width:98%; height:400px;"></div>
+    <script>
+        var chart_eeb476b459004982b3c86b5c33cd4f31 = echarts.init(
+            document.getElementById('eeb476b459004982b3c86b5c33cd4f31'), 'white', {renderer: 'canvas'});
+        var option_eeb476b459004982b3c86b5c33cd4f31 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u6210\u529f",
+                    "value": {{pie_data[0][0]}}
+                },
+                {
+                    "name": "\u5931\u8d25",
+                    "value": {{pie_data[0][1]}}
+                }
+            ],
+            "radius": [
+                "40%",
+                "75%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": "{b}: {c}"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6210\u529f",
+                "\u5931\u8d25"
+            ],
+            "selected": {},
+            "show": true,
+            "left": "2%",
+            "top": "15%",
+            "orient": "vertical",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u6628\u65e5\u7528\u6237\u4efb\u52a1\u63d0\u4ea4\u8be6\u60c5",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_eeb476b459004982b3c86b5c33cd4f31.setOption(option_eeb476b459004982b3c86b5c33cd4f31);
+    </script>
+<br/>                <div id="b5d4da4d4a354b338faeee302e67b30d" class="chart-container" style="width:98%; height:500px;"></div>
+    <script>
+        var chart_b5d4da4d4a354b338faeee302e67b30d = echarts.init(
+            document.getElementById('b5d4da4d4a354b338faeee302e67b30d'), 'white', {renderer: 'canvas'});
+        var option_b5d4da4d4a354b338faeee302e67b30d = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "pv",
+            "connectNulls": false,
+            "symbol": "emptyCircle",
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": {{pv|tojson}},
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "uv",
+            "connectNulls": false,
+            "symbol": "emptyCircle",
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": {{uv|tojson}},
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "pv",
+                "uv"
+            ],
+            "selected": {
+                "pv": true,
+                "uv": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": false,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "type": "category",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": {{date|tojson}}
+        }
+    ],
+    "yAxis": [
+        {
+            "type": "value",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisTick": {
+                "show": true,
+                "alignWithLabel": false,
+                "inside": false
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u8fd1\u4e00\u4e2a\u6708\u7528\u6237\u6d4f\u89c8\u8be6\u60c5",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_b5d4da4d4a354b338faeee302e67b30d.setOption(option_b5d4da4d4a354b338faeee302e67b30d);
+    </script>
+<br/>    </div>
+    <script>
+    </script>
+</body>
+</html>

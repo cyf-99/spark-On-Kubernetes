@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wall-sub-btn {
+            display: block;
+            margin: 42px auto 0;
+            width: 5%;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            color: #fff;
+            /*text-align: center;*/
+            background: #3D84FF;
+            border: none;
+        }
+        .text {
+            margin: 42px auto 0;
+            width: 340px;
+            height: 30px;
+            line-height: 40px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action = "http://192.168.10.4:30000/" method="POST">
+        <div style="text-align: center; width: 100%">
+            <div style="text-align: center; height: 50px;margin-top: 5%">用户名称：<input class="text" type="text" name="user_name"/></div>
+            <div style="text-align: center; height: 50px;">用户密码：<input class="text" type="password" name="password"/></div>
+            <div style="text-align: center; height: 50px;">确认密码：<input class="text" type="password" name="password2"/></div>
+            <div style="text-align: center; width: 100%;">
+                <input class="wall-sub-btn" type="submit" value="注册" name="register"/>
+            </div>
+        </div>
+    </form>
+
+
+</body>
+</html>
